@@ -11,6 +11,13 @@ you creatively focus on your project by minimizing the amount of code needed
 for a given task.
 
 *******************
+Notes
+*******************
+
+I did not develop this website alone. I'm only resposible for the backend 
+development of the SP Archive Module
+
+*******************
 Release Information
 *******************
 
