@@ -1,0 +1,64 @@
+/*
+  Main Style Sheet from UX Team
+  Build March 03, 2018
+*/
+
+.announcement-section
+{
+    font-family: 'Barlow', sans-serif;
+    color: white;
+}
+.announcement-footer
+{
+    font-family: 'Barlow', sans-serif;
+    font-size: 13px;
+    color: white;
+}
+
+/* Dev Team's Custom CSS */
+.img-seal {
+  max-width: 15%;
+}
+
+.maxed-button {
+  width: 100%;
+}
+
+.half-button {
+  width: 49%;
+}
+
+#forgot-password {
+  color: #4E86BA;
+}
+
+.mailbox-item {
+  width: 100%;
+  height: 100%;
+}
+
+.mailbox-item a {
+    color: #5C5C5C;
+}
+
+.mailbox-item a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+
+.uncolored-link {
+  color: #5C5C5C;
+}
+
+/* Table-related CSS Classes */
+
+/* Hides mini links under a table row */
+th small {
+    visibility: hidden;
+}
+
+/* Unhides mini links under a table row */
+tr:hover > th > small {
+    visibility: visible;
+}

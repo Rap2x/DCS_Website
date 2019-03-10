@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<head>
+<title>CSS DCS Cheat sheet</title>
+
+<!-- These are needed -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Fonts needed -->
+<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+<style>
+    .jumbo-header
+    {
+        font-family: 'Bree Serif', serif;
+        color: white;
+    }
+    .jumbo-footer
+    {
+        font-family: 'Barlow', sans-serif;
+        color: white;    
+    }
+
+
+
+    .thumbnail-title
+    {
+        font-family: 'Barlow', sans-serif;
+        color: white;
+    }
+    .thumbnail-date
+    {
+        font-family: 'Barlow', sans-serif;
+        font-size: 13px;
+        color: white;
+    }
+
+
+
+    .carousel-center
+    {
+        margin: auto;
+    }
+
+
+
+    .news-header 
+    {
+        font-family: 'Archivo Black', sans-serif;
+        margin-top: 10%;
+    }
+    .news-body
+    {
+        font-family: 'Crimson Text', serif;
+    }
+
+
+
+    .event-header
+    {
+        font-family: 'Archivo Black', sans-serif;
+        margin-top: 10%;
+    }
+    .event-label
+    {
+        font-family: 'Barlow', sans-serif;
+    }
+    .event-info
+    {
+        font-family: 'Barlow', sans-serif;
+    }
+
+
+
+    .announcement-section
+    {
+        font-family: 'Barlow', sans-serif;
+        color: white;
+    }
+    .announcement-footer
+    {
+        font-family: 'Barlow', sans-serif;
+        font-size: 13px;
+        color: white;
+    }
+
+
+
+    .sp-thumbnail-title
+    {
+        font-family: 'Barlow', sans-serif;
+    }
+    .sp-thumbnail-proponents
+    {
+        font-family: 'Barlow', sans-serif;
+        font-size: 13px;
+    }
+    .sp-thumbnail-advisers
+    {
+        font-family: 'Barlow', sans-serif;
+        font-size: 13px;
+    }
+
+
+
+    .sp-abstract
+    {
+        font-family: 'Barlow', sans-serif;
+        
+    }
+    .sp-abstract-body
+    {
+        font-family: 'Barlow', sans-serif;
+    }
+    .sp-abstract-label
+    {
+        display: inline;
+        font-family: 'Barlow', sans-serif;
+    }
+    .sp-abstract-keywords
+    {
+        font-family: 'Barlow', sans-serif;
+        color: #60B5D3;
+    }
+
+
+
+    .button-filled-flat
+    {   
+        background-color: #4E86BA;
+        border-color: #4E86BA;
+        border-radius: 0px;
+        color: white;
+        font-family: 'Barlow', sans-serif;
+        font-size: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .button-filled-flat:hover
+    {
+        background-color: #3f6f9b;
+        border-color: #3f6f9b;
+    }
+    .button-transparent-flat
+    {
+        color: #4E86BA;
+        background-color: transparent;
+        font-family: 'Barlow', sans-serif;
+        border-radius: 0px;
+        font-size: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-color: #4E86BA;
+    }
+    .button-transparent-flat:hover
+    {
+        background-color: #4E86BA;
+        border-color: #4E86BA;
+    }
+    .button-transparent-flat-dark
+    {
+        background-color: transparent;
+        font-family: 'Barlow', sans-serif;
+        border-radius: 0px;
+        font-size: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+
+
+    .table-heading
+    {   
+        font-family: 'Barlow', sans-serif;
+        background-color: #51CCCD;
+        color: white;
+    }
+    .table-body
+    {   
+        font-family: 'Barlow', sans-serif;
+        background-color: #F5F5F5;
+        color: #5C5C5C;
+    }
+
+
+
+    .card-head
+    {   
+        font-family: 'Barlow', sans-serif;
+        background-color: #51CCCD;
+        color: white;
+    }
+    .card-list
+    {
+        font-family: 'Barlow', sans-serif;
+    }
+
+
+
+    .tree-node-red 
+    {
+        background-color:#fff;
+        width: 50px;
+        height: 50px;
+        padding: 1%;
+        border:5px solid #D95252;
+        border-radius: 50%;  
+        text-align: center;
+    }
+    .tree-node-green
+    {
+        background-color:#fff;
+        width: 50px;
+        height: 50px;
+        padding: 1%;
+        border:5px solid #5BD56F;
+        border-radius: 50%;  
+        text-align: center;
+    }
+
+    /*These are css for overiding bootstrap preset css. No need to call them just put them in your css.*/
+    .jumbotron 
+    {   
+        background-image: url('h3.jpeg'); 
+        background-size: cover;
+        height: 400px;
+    }
+    
+    .navbar
+    {
+        background-color: #508BC2;
+    }
+    a
+    {
+        font-family: 'Barlow', sans-serif;
+        color: white;
+
+    }
+    a:hover
+    {
+        color: #e0e0e0;
+    }
+</style>
+</head>
+
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">DCS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">News <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Advisement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Program</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SP Archive</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Accounts
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container" style="padding-top: 5%;">
+        <h3 class="jumbo-header">DEPARTMENT OF<br>COMPUTER STUDIES</h3>
+        <p class="jumbo-footer">
+            Ateneo de Naga University
+        </p>
+        <button class="btn btn-outline-dark button-filled-flat">About</button>    
+    </div>
+</div>
+
+<!-- Enclose body in a container -->
+<div class="container-fluid">
+
+    <br><br><br>
+
+    <!-- News layout -->
+    <div class="row">
+        <h4 class="col-sm-12" style="font-family: 'Raleway', sans-serif;">News</h4><br><br>
+    </div>
+
+    <!-- News carousel -->
+    <div class="row">
+        <div class="carousel-center">
+            <div id="newscarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://static.pexels.com/photos/404280/pexels-photo-404280.jpeg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://static.pexels.com/photos/7112/woman-typing-writing-windows.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://static.pexels.com/photos/374897/pexels-photo-374897.jpeg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#newscarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#newscarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div> 
+
+    <!-- News content -->
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-sm-8">
+                <h4 class="news-header">News Title</h4>
+                <p class="news-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus, magna ac accumsan pharetra, neque nulla finibus massa, 
+                    a auctor massa mauris eu ex. Praesent egestas malesuada ante, scelerisque vehicula elit eleifend non. Morbi eu ante finibus, 
+                    dictum mi sit amet, pretium est. Sed convallis elementum lacus ac ornare. Aliquam elementum justo sed suscipit commodo. 
+                    In sit amet metus ut quam ultrices hendrerit sed sit amet mi. Mauris vulputate, felis quis vehicula mollis, risus quam 
+                    posuere odio, in ornare odio felis quis mauris. Nam vitae pellentesque diam. Donec vitae molestie dolor.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <br><br>
+
+
+    <!-- Events layout -->
+    <div class="row">
+            <h4 class="col-sm-12" style="font-family: 'Raleway', sans-serif;">Events</h4><br><br>
+    </div>
+
+    <!-- Events carousel -->
+    <div class="row">
+        <div class="carousel-center">
+            <div id="eventscarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://static.pexels.com/photos/404280/pexels-photo-404280.jpeg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://static.pexels.com/photos/7112/woman-typing-writing-windows.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://static.pexels.com/photos/374897/pexels-photo-374897.jpeg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#eventscarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#eventscarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events content -->
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-sm-6">
+                <h4 class="event-header">Event Title</h4>
+                <h6 class="event-label">Description:</h6>
+                <p class="event-info">
+                    Donec vulputate ipsum in justo ornare pretium. Fusce in ipsum quis orci blandit ornare. 
+                    Morbi sodales elit et neque maximus condimentum. Nunc mattis, purus nec suscipit mattis, 
+                    nulla nunc bibendum nisi, a rutrum odio nisl ac ante.
+                </p>
+                <h6 class="event-label">Time:</h6>
+                <p class="event-info">12:00 am - 12:00 pm</p>
+                
+                <h6 class="event-label">Date:</h6>
+                <p class="event-info">January 01, 2018</p>
+                
+                <h6 class="event-label">Venue:</h6>
+                <p class="event-info">Ateneo de Naga University</p>
+                
+                <h6 class="event-label">Organizer:</h6>
+                <p class="event-info">TACTICS</p>
+                
+                <h6 class="event-label">Reminders:</h6>
+                <p class="event-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus, magna ac accumsan 
+                    pharetra, neque nulla finibus massa, a auctor massa mauris eu ex. Praesent egestas malesuada ante, 
+                    scelerisque vehicula elit eleifend non. Morbi eu ante finibus, dictum mi sit amet, pretium est. 
+                    Sed convallis elementum lacus ac ornare.
+                </p>  
+            </div>
+        </div>
+    </div>
+
+
+
+    <br><br>
+
+
+    <!-- Announcements -->
+    <div class="row">
+        <h4 class="col-sm-12" style="font-family: 'Raleway', sans-serif;">Announcements</h4><br><br>
+    </div>
+
+    <!-- Announcement sections -->
+    <div class="row" style="background-color: #4E86BA; padding-top: 2%;">
+        <p class="col-sm-4 announcement-section">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Proin tempus, magna ac accumsan pharetra, neque nulla finibus 
+            massa, a auctor massa mauris eu ex. Praesent egestas malesuada 
+            ante, scelerisque vehicula elit eleifend non. Morbi eu ante 
+            finibus, dictum mi sit amet, pretium est. Sed convallis 
+            elementum lacus ac ornare."
+        </p>
+        <p class="col-sm-4 announcement-section">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Proin tempus, magna ac accumsan pharetra, neque nulla finibus 
+            massa, a auctor massa mauris eu ex. Praesent egestas malesuada 
+            ante, scelerisque vehicula elit eleifend non. Morbi eu ante 
+            finibus, dictum mi sit amet, pretium est. Sed convallis 
+            elementum lacus ac ornare."
+        </p>
+        <p class="col-sm-4 announcement-section">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Proin tempus, magna ac accumsan pharetra, neque nulla finibus 
+            massa, a auctor massa mauris eu ex. Praesent egestas malesuada 
+            ante, scelerisque vehicula elit eleifend non. Morbi eu ante 
+            finibus, dictum mi sit amet, pretium est. Sed convallis 
+            elementum lacus ac ornare."
+        </p>
+    </div>
+    <!-- Announcement footer -->
+    <div class="row" style="background-color: #4E86BA; padding-bottom: 1%;">
+        <p class="col-sm-4 announcement-footer">
+            Posted by - John Smith<br>
+            Jan 1, 2018<br>
+            Pinned
+        </p>
+        <p class="col-sm-4 announcement-footer">
+            Posted by - John Smith<br>
+            Jan 1, 2018<br>
+            Pinned
+        </p>
+        <p class="col-sm-4 announcement-footer">
+            Posted by - John Smith<br>
+            Jan 1, 2018<br>
+        </p>
+    </div>
+
+
+
+
+    <br><br>
+
+
+    <!--  SP archive thumbnail -->
+    <div class="row">
+        <h4 class="col-sm-12" style="font-family: 'Raleway', sans-serif;">SP Archive Thumbnails</h4><br><br>
+    </div>
+
+    <!-- SP archive thumbnail -->
+    <div class="row">
+        <div class="col-sm-2">
+            <h5 class="sp-thumbnail-title">Title</h5>
+            <p class="sp-thumbnail-proponents">
+                Proponents
+            </p>
+            <p class="sp-thumbnail-advisers">
+                Advisers
+            </p>
+        </div>
+    </div>
+
+
+
+    <br><br>
+
+
+    <!--  SP archive -->
+    <div class="row">
+        <h4 class="col-sm-12" style="font-family: 'Raleway', sans-serif;">SP Archive Abstract</h4><br><br>
+    </div>
+
+    <!-- SP archive abstract -->
+    <div class="row">
+        <div class="col-sm-6">
+            <h6 class="sp-abstract">ABSTRACT</h6>
+            <p class="sp-abstract-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, ipsum non viverra 
+                laoreet, dolor neque molestie tellus, vitae interdum dolor diam a augue. Maecenas placerat 
+                arcu et risus tempor, ac fermentum massa blandit. Fusce vitae nibh turpis. Nullam quis 
+                lorem velit. Ut eu rhoncus risus. Donec sagittis congue lectus. Curabitur sit amet eros 
+                non arcu volutpat tristique sed id risus. Proin suscipit nulla ac odio pretium maximus. 
+                Pellentesque non tempus est. Nam at ex ut ex interdum dignissim.
+            </p>
+            <p class="sp-abstract-label">Keywords: </p>
+            <span class="sp-abstract-keywords">word, word, word</span>
+        </div>
+    </div>
+
+
+
+    <br><br><br>
+
+
+    <!-- Textfields -->
+    <div class="row">
+            <h2 class="col-sm-12" style="font-family: 'Raleway', sans-serif;">Textfields</h2>
+    </div>
+
+
+
+    <br>
+
+
+
+    <div class="row">
+        <div class="col-sm-12">
+            <form>
+                <div class="form-group col-sm-4">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label>Event Title</label>
+                    <input type="text" class="form-control" placeholder="Event title">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label>Venue</label>
+                    <input type="text" class="form-control" placeholder="Venue">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label>Organizers</label>
+                    <input type="text" class="form-control" placeholder="Organizers">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="exampleFormControlTextarea1">Event Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Description"></textarea>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="exampleFormControlTextarea1">Event Reminders</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Reminders"></textarea>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="exampleFormControlTextarea1">Announcements</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Announcements"></textarea>
+                </div>
+                <div class="form-group col-sm-10">
+                    <label>Title of Article</label>
+                    <input type="text" class="form-control" placeholder="Title of article">
+                </div>
+                <div class="form-group col-sm-10">
+                    <label for="exampleFormControlTextarea1">Article Body</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Article body"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <br><br>
+
+
+    <!-- tables -->
+    <div class="row">
+        <h2 class="col-sm-12" style="font-family: 'Raleway', sans-serif;">Tables</h2>
+    </div>
+
+
+
+    <br>
+
+
+    <!-- Accounts table -->
+    <div class="row">
+        <h4 class="col-sm-12" style="font-family: 'Raleway', sans-serif;">Accounts Table</h4><br><br>
+    </div>
+
+    <table class="table">
+        <thead class="table-heading">
+            <tr>
+                <th>Account Privilege</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <tr>
+                <th>Administrator</th>
+                <td>Fname</td>
+                <td>Lname</td>
+                <td>Pname</td>
+                <td>45fk56njjhg64333</td>
+            </tr>
+            <tr>
+                <th>Chairperson</th>
+                <td>Fname</td>
+                <td>Lname</td>
+                <td>Pname</td>
+                <td>45fk56njjhg64333</td>
+            </tr>
+            <tr>
+                <th>Program Coordinator</th>
+                <td>Fname</td>
+                <td>Lname</td>
+                <td>Pname</td>
+                <td>45fk56njjhg64333</td>
+            </tr>
+            <tr>
+                <th>Moderator</th>
+                <td>Fname</td>
+                <td>Lname</td>
+                <td>Pname</td>
+                <td>45fk56njjhg64333</td>
+            </tr>
+            <tr>
+                <th>Faculty</th>
+                <td>Fname</td>
+                <td>Lname</td>
+                <td>Pname</td>
+                <td>45fk56njjhg64333</td>
+            </tr>
+            <tr>
+                <th>Co-curricular Organizaiton</th>
+                <td>Fname</td>
+                <td>Lname</td>
+                <td>Pname</td>
+                <td>45fk56njjhg64333</td>
+            </tr>
+            <tr>
+                <th>Students</th>
+                <td>Fname</td>
+                <td>Lname</td>
+                <td>Pname</td>
+                <td>45fk56njjhg64333</td>
+            </tr>
+            <tr>
+                <th>Alumni</th>
+                <td>Fname</td>
+                <td>Lname</td>
+                <td>Pname</td>
+                <td>45fk56njjhg64333</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <!-- Program table -->
+    <table class="table">
+        <thead class="table-heading">
+            <tr>
+                <th>Subject Code</th>
+                <th>Subject Name</th>
+                <th>Units</th>
+                <th>Prerequisites</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <tr>
+                <td>ICST000</td>
+                <td>Fundamentals</td>
+                <td>3</td>
+                <td>none</td>
+            </tr>
+            <tr>
+                <td>ICST000</td>
+                <td>Fundamentals</td>
+                <td>3</td>
+                <td>none</td>
+            </tr>
+            <tr>
+                <td>ICST000</td>
+                <td>Fundamentals</td>
+                <td>3</td>
+                <td>none</td>
+            </tr>
+        </tbody>
+    </table>
+          
+
+
+    <br><br>
+
+
+
+    <!-- Buttons -->
+    <div class="row">
+        <h2 class="col-sm-12" style="font-family: 'Raleway', sans-serif;">Buttons</h2>
+    </div>
+
+
+
+    <br>
+
+
+
+    <div class="row">
+        <div class="col-sm-6">
+            <button class="btn button-filled-flat">BUTTON</button>
+            <button class="btn button-filled-flat">Button</button>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <button class="btn btn-outline-primary button-transparent-flat">BUTTON</button>
+            <button class="btn btn-outline-primary button-transparent-flat">Button</button>
+            <button class="btn btn-outline-dark button-transparent-flat-dark">BUTTON</button>
+            <button class="btn btn-outline-dark button-transparent-flat-dark">Button</button>
+        </div>
+    </div>
+
+
+
+    <br><br>
+
+
+    <!-- Checkboxes -->
+    <div class="row">
+         <h2 class="col-sm-12" style="font-family: 'Raleway', sans-serif;">Check Boxes</h2>
+    </div>
+
+
+
+    <br>
+
+
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    List 1
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                <label class="form-check-label" for="defaultCheck2">
+                    List 2
+                </label>
+            </div>
+
+            <br>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">List 1</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">List 2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                <label class="form-check-label" for="inlineCheckbox3">List 3</label>
+            </div>
+        </div>
+    </div>
+
+
+
+    <br><br>
+
+
+    <!-- Radio Buttons -->
+    <div class="row">
+        <h2 class="col-sm-12" style="font-family: 'Raleway', sans-serif;">Radio Buttons</h2>
+    </div>
+
+
+
+    <br>
+
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Option 1
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    Option 2
+                </label>
+            </div>
+            <div class="form-check disabled">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                <label class="form-check-label" for="exampleRadios3">
+                    Option 3
+                </label>
+            </div>
+            
+            <br>
+
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Option 1
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    Option 2
+                </label>
+            </div>
+            <div class="form-check-inline disabled">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                <label class="form-check-label" for="exampleRadios3">
+                    Option 3
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+
+    <br><br>
+
+
+    <!-- Cards -->
+    <div class="row">
+        <h2 class="col-sm-12" style="font-family: 'Raleway', sans-serif;">Cards</h2>
+    </div>
+
+    <br>
+
+    <!-- List of Advisers -->
+    <div class="row">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header text-center card-head">
+                Advisers
+            </div>
+                <ul class="list-group list-group-flush card-list">
+                    <li class="list-group-item">John Smith</li>
+                    <li class="list-group-item">Ann Marie</li>
+                    <li class="list-group-item">Jack Tim</li>
+                    <li class="list-group-item">Paul Thompson</li>
+                    <li class="list-group-item">Patrick Kenway</li>
+                </ul>
+        </div>
+
+        <!-- List of Advisees -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-header text-center card-head">
+                Advisees
+            </div>
+            <ul class="list-group list-group-flush card-list">
+                <li class="list-group-item">John Smith</li>
+                <li class="list-group-item">Ann Marie</li>
+                <li class="list-group-item">Jack Tim</li>
+                <li class="list-group-item">Paul Thompson</li>
+                <li class="list-group-item">Patrick Kenway</li>
+            </ul>
+        </div>
+
+        <!-- Message composition -->
+        <div class="card" style="width: 35rem;">
+            <div class="card-header">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Subject">
+                </div>
+            </div>
+            <div class="card-body">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Type your message here."></textarea>
+            </div>
+        </div>
+    </div>
+
+
+
+    <br><br>
+
+
+    <!-- Skill Tree Nodes -->
+    <div class="row">
+        <h2 class="col-sm-12" style="font-family: 'Raleway', sans-serif;">Skill Tree</h2>
+    </div>
+
+
+
+    <br>
+
+
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="tree-node-green">
+                <h3>3</h3> 
+            </div>
+            <div class="tree-node-red">
+                <h3>6</h3>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <br><br>
+
+
+
+    <div class="row">
+    <!-- Button trigger modal -->
+        <button type="button" class="btn button-filled-flat" data-toggle="modal" data-target="#exampleModalCenter">
+            View Abstract
+        </button>
+    </div>
+      
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="sp-abstract" id="exampleModalLongTitle">ABSTRACT</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <h5 class="sp-thumbnail-title">Title</h5>
+                            <p class="sp-thumbnail-proponents">
+                                Proponents
+                            </p>
+                            <p class="sp-thumbnail-advisers">
+                                Advisers
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="sp-abstract-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, ipsum non viverra 
+                                laoreet, dolor neque molestie tellus, vitae interdum dolor diam a augue. Maecenas placerat 
+                                arcu et risus tempor, ac fermentum massa blandit. Fusce vitae nibh turpis. Nullam quis 
+                                lorem velit. Ut eu rhoncus risus. Donec sagittis congue lectus. Curabitur sit amet eros 
+                                non arcu volutpat tristique sed id risus. Proin suscipit nulla ac odio pretium maximus. 
+                                Pellentesque non tempus est. Nam at ex ut ex interdum dignissim.
+                            </p>
+                            <p class="sp-abstract-label">Keywords: </p>
+                            <span class="sp-abstract-keywords">word, word, word</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-md-center">
+                    <button type="button" class="btn button-filled-flat">VIEW FULL DOCUMENT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>      
+</body>
+</html>
+

@@ -1,0 +1,384 @@
+    .navbar
+    {
+        background-color: #3D5B8E;
+    }
+    .navbar-brand
+    {
+        color: white;
+    }
+    .navbar-brand:hover
+    {
+        color: #e0e0e0;
+    }
+
+
+
+
+    .jumbotron
+    {
+        background-image: url('../images/header.jpg');
+        background-size: cover;
+        height: 400px;
+    }
+    .jumbo-header
+    {
+        font-family: 'Nunito', sans-serif;
+        color: white;
+    }
+    .jumbo-footer
+    {
+        font-family: 'Barlow', sans-serif;
+        color: white;
+    }
+
+
+
+    .tabs
+    {
+        font-family: 'Heebo', sans-serif;
+        font-size: 13px;
+        color: white;
+    }
+    .tabs:hover
+    {
+        color: #e0e0e0;
+    }
+    .drop-tab
+    {
+        font-family: 'Heebo', sans-serif;
+        font-size: 13px;
+    }
+
+
+
+    .navigation-tab
+    {
+        font-family: 'Heebo', sans-serif;
+        font-size: 13px;
+    }
+    .navigation-link
+    {
+        color:#3D5B8E;
+    }
+
+
+
+
+    .thumbnail-title
+    {
+        font-family: 'Barlow', sans-serif;
+        color: white;
+    }
+    .thumbnail-date
+    {
+        font-family: 'Barlow', sans-serif;
+        font-size: 13px;
+        color: white;
+    }
+
+
+
+    .carousel-center
+    {
+        margin: auto;
+    }
+
+
+
+    .news-header
+    {
+        font-family: 'Archivo Black', sans-serif;
+        margin-top: 10%;
+    }
+    .news-body
+    {
+        font-family: 'Crimson Text', serif;
+    }
+
+
+
+    .event-header
+    {
+        font-family: 'Archivo Black', sans-serif;
+        margin-top: 10%;
+    }
+    .event-label
+    {
+        font-family: 'Barlow', sans-serif;
+    }
+    .event-info
+    {
+        font-family: 'Barlow', sans-serif;
+    }
+
+
+
+    .announcement-section
+    {
+        font-family: 'Assistant', sans-serif;
+        color: white;
+    }
+    .announcement-footer
+    {
+        font-family: 'Assistant', sans-serif;
+        font-size: 13px;
+        color: white;
+    }
+    .announcement-section-bg {
+        background-color: #83C4D1;
+        padding-top: 2%;
+    }
+    .announcement-footer-bg {
+        background-color: #83C4D1;
+        padding-bottom: 1%;
+    }
+
+
+    .sp-thumbnail-title
+    {
+        font-family: 'Barlow', sans-serif;
+    }
+    .sp-thumbnail-proponents
+    {
+        font-family: 'Barlow', sans-serif;
+        font-size: 13px;
+    }
+    .sp-thumbnail-advisers
+    {
+        font-family: 'Barlow', sans-serif;
+        font-size: 13px;
+    }
+
+
+
+    .sp-abstract
+    {
+        font-family: 'Barlow', sans-serif;
+
+    }
+    .sp-abstract-body
+    {
+        font-family: 'Barlow', sans-serif;
+    }
+    .sp-abstract-label
+    {
+        display: inline;
+        font-family: 'Barlow', sans-serif;
+    }
+    .sp-abstract-keywords
+    {
+        font-family: 'Barlow', sans-serif;
+        color: #60B5D3;
+    }
+    .sp-text{
+        font-family: 'Barlow',sans-serif;
+        color: white;
+    }
+
+
+    .button-filled-flat
+    {
+        background-color: #3D5B8E;
+        border-color: #3D5B8E;
+        border-radius: 0px;
+        color: white;
+        font-family: 'Barlow', sans-serif;
+        font-size: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .button-filled-flat:hover
+    {
+        background-color: #3f6f9b;
+        border-color: #3f6f9b;
+    }
+    .button-delete
+    {
+        background-color: #E74D4D;
+        border-color: #E74D4D;
+        border-radius: 0px;
+        color: white;
+        font-family: 'Barlow', sans-serif;
+        font-size: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .button-delete:hover
+    {
+        background-color: #E56363;
+        border-color: #E56363;
+    }
+    .button-edit
+    {
+        background-color: #30BF8F;
+        border-color: #30BF8F;
+        border-radius: 0px;
+        color: white;
+        font-family: 'Barlow', sans-serif;
+        font-size: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .button-edit:hover
+    {
+        background-color: #6DBDA2;
+        border-color: #6DBDA2;
+    }
+    .button-transparent-flat
+    {
+        color: #4E86BA;
+        background-color: transparent;
+        font-family: 'Barlow', sans-serif;
+        border-radius: 0px;
+        font-size: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-color: #4E86BA;
+    }
+    .button-transparent-flat:hover
+    {
+        background-color: #4E86BA;
+        border-color: #4E86BA;
+    }
+    .button-transparent-edit
+    {
+        color: #6DBDA2;
+        background-color: transparent;
+        font-family: 'Barlow', sans-serif;
+        border-radius: 0px;
+        font-size: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-color: #6DBDA2;
+    }
+    .button-transparent-edit:hover
+    {
+        background-color: #6DBDA2;
+        border-color: #6DBDA2;
+    }
+    .button-transparent-delete
+    {
+        color: #E74D4D;
+        background-color: transparent;
+        font-family: 'Barlow', sans-serif;
+        border-radius: 0px;
+        font-size: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-color: #E74D4D;
+    }
+    .button-transparent-delete:hover
+    {
+        background-color: #E74D4D;
+        border-color: #E74D4D;
+    }
+    .button-transparent-flat-dark
+    {
+        background-color: transparent;
+        font-family: 'Barlow', sans-serif;
+        border-radius: 0px;
+        font-size: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+
+
+    .table-heading
+    {
+        font-family: 'Barlow', sans-serif;
+        background-color: #83C4D1;
+        color: white;
+    }
+    .table-body
+    {
+        font-family: 'Barlow', sans-serif;
+        background-color: #F5F5F5;
+        color: #5C5C5C;
+    }
+
+
+
+    .card-head1
+    {
+        font-family: 'Barlow', sans-serif;
+        background-color: #51CCCD;
+        color: white;
+    }
+    .card-head2
+    {
+        font-family: 'Barlow', sans-serif;
+        background-color: #83C4D1;
+        color: white;
+    }
+    .card-content
+    {
+        font-family: 'Barlow', sans-serif;
+    }
+    .card-list
+    {
+        font-family: 'Barlow', sans-serif;
+    }
+
+
+
+    .tree-node-red
+    {
+        background-color:#fff;
+        width: 50px;
+        height: 50px;
+        padding: 1%;
+        border:5px solid #D95252;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .tree-node-green
+    {
+        background-color:#fff;
+        width: 50px;
+        height: 50px;
+        padding: 1%;
+        border:5px solid #5BD56F;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+
+
+    .panel-value
+    {
+        font-family: 'Barlow', sans-serif;
+        font-size: 80px;
+        font-weight: bold;
+        color: white;
+    }
+    .panel-footer
+    {
+        font-family: 'Assistant', sans-serif;
+        color: white;
+    }
+    .panel
+    {
+        background-color: #3D5B8E;
+    }
+
+
+
+    .pagination-link
+    {
+        color: #3D5B8E
+    }
